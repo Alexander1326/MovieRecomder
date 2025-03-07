@@ -1,0 +1,35 @@
+.watchlist-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .movies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .movie-card {
+    background: #222;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .movie-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .remove-button {
+    display: block;
+    margin-top: 10px;
+    padding: 8px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  

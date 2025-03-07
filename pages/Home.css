@@ -1,0 +1,243 @@
+/* General Layout and Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #111;
+  color: #ddd;
+}
+
+.home-container {
+  padding: 20px;
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  background: url('https://your-cinema-background-image-link.com') center center/cover no-repeat;
+  height: 80vh; /* Adjust height to accommodate forms and movies */
+  color: #fff;
+  padding: 40px 20px 20px;
+  position: relative;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.6);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  font-family: 'Bebas Neue', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  animation: fadeIn 2s ease-in-out;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1.8rem;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 2px;
+  font-weight: 400;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+  animation: fadeIn 2.5s ease-in-out;
+  margin-top: 10px;
+}
+
+.hero .buttons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+  animation: fadeIn 3s ease-in-out;
+}
+
+.signup,
+.login {
+  padding: 12px 30px;
+  font-size: 1.2rem;
+  font-family: 'Roboto', sans-serif;
+  border: none;
+  background-color: #ffcc00;
+  color: #222;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  letter-spacing: 1px;
+}
+
+.signup:hover,
+.login:hover {
+  background-color: #f7a600;
+}
+
+/* Form Container inside Hero */
+.form-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px; /* Adjust space between title and forms */
+  animation: fadeIn 3s ease-in-out;
+}
+
+.form-container .form-box {
+  background-color: #222;
+  padding: 30px;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+  text-align: center;
+}
+
+.form-container input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #444;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.form-container button {
+  width: 100%;
+  padding: 12px;
+  background-color: #ffcc00;
+  color: #222;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  background-color: #f7a600;
+}
+
+.form-container .form-box h2 {
+  color: #f0c040;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Popular Movies Section */
+.movie-section {
+  margin-top: 30px;
+}
+
+.movie-section h3 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #f0c040;
+}
+
+.movies-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.movie-card {
+  width: 180px;
+  height: 250px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+  transform: scale(1);
+  transition: transform 0.3s ease;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+}
+
+.movie-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.movie-card p {
+  font-size: 1rem;
+  color: #fff;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.work-in-progress {
+  font-size: 1.5rem;
+  color: #f0c040;
+  text-align: center;
+  font-weight: bold;
+  padding: 20px;
+}
+
+/* Cinematic Logos Section */
+.cinematic-logos {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 20px;
+  animation: fadeIn 4s ease-in-out;
+}
+
+.cinematic-logo {
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.cinematic-logo:hover {
+  transform: scale(1.1);
+}
+
+.cinematic-logo.film-reel {
+  background-image: url('https://link-to-your-film-reel-icon.png');
+}
+
+.cinematic-logo.clapperboard {
+  background-image: url('https://link-to-your-clapperboard-icon.png');
+}
+
+.cinematic-logo.camera {
+  background-image: url('https://link-to-your-camera-icon.png');
+}
+
+/* General Styles */
+button {
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}

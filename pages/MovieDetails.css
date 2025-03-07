@@ -1,0 +1,21 @@
+.movie-details-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.movie-details-container img {
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.movie-details-container p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+.movie-details-container h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}

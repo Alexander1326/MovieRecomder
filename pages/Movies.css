@@ -1,0 +1,113 @@
+/* Base styles for movies container */
+.movies-container {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Search form */
+.search-form {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* Space between input and button */
+}
+
+.search-form input {
+  padding: 8px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-form button {
+  padding: 8px;
+  background: #ffcc00;
+  border: none;
+  cursor: pointer;
+}
+
+/* Genre dropdown */
+.genre-dropdown {
+  position: relative;
+}
+
+.genre-dropdown button {
+  padding: 8px;
+  background: #ffcc00;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.genre-options {
+  position: absolute;
+  background: #333;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  top: 40px;
+  z-index: 10;
+  display: block;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.genre-option {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.genre-option:hover {
+  background: #555;
+}
+
+/* Movie grid layout */
+.movies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.movie-card {
+  background: #222;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  position: relative;
+  transition: transform 0.3s;
+}
+
+.movie-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Hover effect for the movie card */
+.movie-card:hover {
+  transform: scale(1.05);
+}
+
+/* Styling for the 'View Details' button and 'Add to Watchlist' button */
+.details-button,
+.watchlist-button {
+  display: block;
+  margin-top: 10px;
+  padding: 8px;
+  background: #ffcc00;
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.details-button:hover,
+.watchlist-button:hover {
+  background: #ffaa00;
+}
+
+/* Movie card flipped state */
+.movie-card.flipped {
+  transform: rotateY(180deg);
+}
